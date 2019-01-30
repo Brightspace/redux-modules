@@ -1,5 +1,3 @@
-import invariant from 'invariant';
-
 /*
  * Default api states
  */
@@ -26,7 +24,6 @@ export const getApiTypes = (type) => apiKeys(type).reduce((memo, key) => memo.co
 
 export const noop = (r) => r;
 export const syncEach = (initial, cb) => {
-  invariant(initial, 'No initial value defined');
 
   cb = typeof cb === 'function' ? cb : noop;
 

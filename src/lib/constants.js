@@ -1,4 +1,3 @@
-import invariant from 'invariant';
 import {upcase, apiKeys, apiStates, getApiTypes, toApiKey} from './utils';
 
 export const REDUX_MODULE_ACTION_KEY = 'REDUX_MODULES/ACTION'
